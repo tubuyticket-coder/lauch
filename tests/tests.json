@@ -1,0 +1,6 @@
+[
+  {"name":"Book a regular ticket and receive a QR ticket","sanity":true,"viewport":"desktop","covers":["ticket selection","attendee details validation","payment-step ticket issuance","QR ticket generation","ticket persistence"]},
+  {"name":"Reject incomplete attendee details","viewport":"mobile","covers":["required attendee validation","invalid email validation","mobile booking interaction"]},
+  {"name":"Navigate between event information pages","viewport":"desktop","covers":["home page","about page","contact page","location page","responsive navigation"]},
+  {"name":"Show support and developer contact actions","viewport":"mobile","covers":["WhatsApp support link","support phone link","developer footer credit"]}
+]
