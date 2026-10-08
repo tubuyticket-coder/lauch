@@ -1,27 +1,27 @@
 # DENNO B STUDIO LAUNCH
 
-Complete downloadable source package for the ticket website.
+Complete source package for the ticket booking site.
 
-## Run frontend
+## Event
+- 6 December 2026
+- 12 PM - 6 PM
+- Nairobi Chokaa Stage
+- Regular KES 500
+- VIP KES 1,500
+- VVIP KES 2,000
+- Maximum 20 tickets per order
+
+## Payment
+PayHero channel: 13748. Keep PAYHERO_BASIC_AUTH server-side in Supabase Edge Function secrets. Never put the Basic Auth token in the frontend.
+
+## Emails
+EmailJS is server-side in `payhero-webhook`. Successful payment sends the ticket email; cancelled/failed payment sends the failed-payment email.
+
+## Cancellation UI
+Failed or cancelled payment opens a separate cancellation popup. Clicking Okay closes it and resets the booking form so the customer can start again.
+
+## Run
+```bash
 npm install
 npm run dev
-
-## Supabase Edge Functions
-Deploy:
-- create-payment
-- payment-status
-- payhero-webhook
-
-Server secrets required:
-PAYHERO_BASIC_AUTH
-PAYHERO_CHANNEL_ID
-EMAILJS_PUBLIC_KEY
-EMAILJS_SERVICE_ID
-EMAILJS_TICKET_TEMPLATE_ID
-EMAILJS_FAILED_TEMPLATE_ID
-
-Supabase supplies SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY. Never put service-role or PayHero secrets in React/browser code.
-
-Event: 6 December 2026, 12 PM–6 PM, Nairobi Chokaa Stage.
-Regular KES 500 | VIP KES 1,500 | VVIP KES 2,000.
-Support: 0742197572. Developer: Felix Nyabuto 0716625790.
+```
