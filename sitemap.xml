@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for Dennoh Studio
+  Host this file at: https://www.dennohbstudio.co.ke/sitemap.xml
+
+  IMPORTANT:
+  - This sitemap intentionally lists only the homepage because the site's other
+    live routes have not yet been confirmed.
+  - Add only URLs that return HTTP 200, are indexable, and use your chosen
+    canonical hostname.
+  - If your site uses the non-www hostname as canonical, replace www URLs below.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.dennohbstudio.co.ke/</loc>
+  </url>
+</urlset>
